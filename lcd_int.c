@@ -24,8 +24,8 @@ void LCD_init (void){
 	GPIO_PORTA_DIR_R |= 0xE0;          // set PORTA pin 7-5 as output for control
 	GPIO_PORTA_DEN_R |= 0xE0;          // set PORTA pin 7-5 as digital pins 
 	GPIO_PORTB_CR_R  |= 0xFF;          // allow changes to all the bits in port B
-	GPIO_PORTA_DEN_R = 0XFF;
-	GPIO_PORTA_DIR_R = 0XFF;
+	GPIO_PORTB_DEN_R |= 0XFF;
+	GPIO_PORTB_DIR_R |= 0XFF;
 	genericDelay (20);
 	LCD_command(0x38); //8-bits,2 display lines, 5x7 font
 	genericDelay(5);
