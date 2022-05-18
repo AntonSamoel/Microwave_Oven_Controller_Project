@@ -4,7 +4,7 @@ void displayTime(int m,int s)
   LCD_command(0x01);
  
   if(m>9){
-	
+	 
 	LCD_setcursorRowCol(0, 5);
   LCD_printInt(m);
 	}
