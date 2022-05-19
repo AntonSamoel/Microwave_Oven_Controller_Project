@@ -24,7 +24,6 @@ void LCD_setcursorRowCol(unsigned int row, unsigned int col)
 	}
 
 
-
 void LCD_printInt(int no)
 {
 	int i=0;
