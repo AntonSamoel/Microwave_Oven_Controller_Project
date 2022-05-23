@@ -5,10 +5,12 @@ case cooking:
 			 {
 				 while(s >= 0)
 				 {
-					  LCD_clear()
+					  LCD_clear();
+					 //LCD_init();
+					 
 						displayTime(m ,s);
 
-						genericDelay(50);              //200
+						genericDelay(1000);              
 						s--;         
 						if(m==0 && s==0){
 							state = finished;
@@ -27,4 +29,6 @@ case cooking:
 				m--;
 				s = 59;      
 		}
+
+			 
 			break;
