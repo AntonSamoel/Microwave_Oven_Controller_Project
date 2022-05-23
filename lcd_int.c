@@ -28,7 +28,7 @@ void LCD_init (void){
 	GPIO_PORTB_DIR_R |= 0XFF;
 	genericDelay (20);
 	LCD_command(0x38); //8-bits,2 display lines, 5x7 font
-	genericDelay(5);
+	genericDelay(25);
 	LCD_command(0x08);
 	LCD_command(0x01); //clear display
 	LCD_command(0x06); //increments automatically to right
