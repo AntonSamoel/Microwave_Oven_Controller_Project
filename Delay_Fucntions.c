@@ -9,9 +9,11 @@ void SysTick_Done(unsigned long delay){
 void genericDelay(unsigned long delay){   //1 ms delay
 int i; 
  for(i=0;i<delay;i++){ 
- SysTick_Done(80000);
+ SysTick_Done(16000);
  }
 }
+
+
 
 void systick_10MicroSec( double delay){
 	unsigned long i;
