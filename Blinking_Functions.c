@@ -5,17 +5,17 @@
 		for(num=0;num<3;num++)
 	{
 		GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R ^ 0x0E;
-		genericDelay(50);
+		genericDelay(10);
 		GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R ^ 0x0E;
-		genericDelay(200);
+		genericDelay(1000);
 	}
 	
 }
 	void blink()
 	{
 		GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R ^ 0x0E;
-		genericDelay(100);
+		genericDelay(10);
 		GPIO_PORTF_DATA_R = GPIO_PORTF_DATA_R ^ 0x0E;
-		genericDelay(100);
+		genericDelay(10);
 	}
 		
