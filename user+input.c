@@ -52,7 +52,7 @@
 			else if (key == 'C')
 			{
 					do {
-						LCD_printString("chiken weight?");
+						LCD_printString("chicken weight?");
 						genericDelay(500);
 						 k = keypad_getkey();					
 						genericDelay(50);
