@@ -19,7 +19,7 @@ void systick_10MicroSec( double delay){
 	unsigned long i;
 	for(i=0 ;i<delay ;
 	i++){
-	SysTick_Done(800);
+	SysTick_Done(160);
 
 	}
 }
